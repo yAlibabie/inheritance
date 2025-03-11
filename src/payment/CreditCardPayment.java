@@ -1,16 +1,12 @@
 package payment;
 
-import java.util.ArrayList;
-
 public class CreditCardPayment implements PaymentStrategy {
     String cardNumber ;
     String cardHolderName ;
-    ArrayList <CreditCardPayment> customer = new ArrayList<>();
 
     public CreditCardPayment(String cardNumber, String cardHolderName) {
         this.cardNumber = cardNumber;
         this.cardHolderName = cardHolderName;
-        customer.add(this);
     }
 
     @Override
