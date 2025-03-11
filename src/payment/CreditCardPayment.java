@@ -17,6 +17,6 @@ public class CreditCardPayment implements PaymentStrategy {
 
     @Override
     public String getPaymentDetails() {
-       return "Credit card payment - Card number: " + cardNumber +", Card golder:" + cardHolderName ;
+       return "Credit card payment - Card number: " + cardNumber +", Card holder:" + cardHolderName ;
     }
 }

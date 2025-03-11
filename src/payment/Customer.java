@@ -15,13 +15,14 @@ public abstract class Customer {
 
     public void makePayment(PaymentStrategy paymentStrategy , double amount) {
             paymentStrategy.pay(amount);
-            String payments = "payment" + amount + "\n" + paymentStrategy.getPaymentDetails();
+            String payments = "payment: " + amount + "\n" + paymentStrategy.getPaymentDetails();
             paymentHistory.add(payments);
     }
 
     public void showPaymentHistory () {
         for (String paymentHistories : paymentHistory) {
             System.out.println(paymentHistories);
+            System.out.println();
         }
     }
 }
